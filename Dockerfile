@@ -6,4 +6,4 @@ RUN apk update && apk add ca-certificates wget \
 
 RUN chmod +x /usr/local/bin/dumb-init
 
-ENTRYPOINT ["/usr/bin/dumb-init", "--"]
+ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
