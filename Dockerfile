@@ -5,3 +5,5 @@ RUN apk update && apk upgrade \
   && rm -rf /var/cache/apk/*
 
 RUN pip install dumb-init
+
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
